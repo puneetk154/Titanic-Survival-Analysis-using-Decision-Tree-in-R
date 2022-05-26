@@ -1,6 +1,3 @@
-# Decision Tree Analysis - Titanic Survival
-
-
 # Recall some important libraries
 library(htmlTable)
 library(tidyverse)
@@ -62,6 +59,3 @@ rpart.plot(DT, type=1, extra = 102)
 predict_dt <- predict(DT, test_cleanned, type = "class")
 result <- data.frame( Survived = predict_dt)
 write.csv(result, file = "C:/Users/Puneet Kishore/OneDrive/Desktop/Imarticus/R/Project 5 - Titanic Survival/result.csv", row.names = F)
-
-
-
